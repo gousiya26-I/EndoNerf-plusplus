@@ -1,0 +1,36 @@
+expname =example_training_hashgridvP26
+basedir = /scratch/project_2017044/logs4
+dataset_type = llff
+datadir = /projappl/project_2017044/EndoNerf/DataP/P26data 
+
+factor = 1
+llffhold = 1
+llff_renderpath=fixidentity
+
+N_rand = 256
+N_samples = 32
+N_importance = 32
+
+use_viewdirs = True
+raw_noise_std = 1e0
+davinci_endoscopic=True
+use_fgmask=False
+use_depth=False
+depth_sampling_sigma=5.0          # ← FIXED (was 1.0)
+depth_refine_period=4000
+depth_refine_quantile=0.3         # ← Changed to default (was 0.1)
+
+nerf_type = direct_temporal
+no_batching = True
+not_zero_canonical = False
+
+i_print = 200
+i_testset = 50000
+i_weights = 4000
+i_video = 100000
+video_fps = 10
+lrate = 1e-4
+
+#N_rand = 32
+#chunk = 512
+#netchunk = 512

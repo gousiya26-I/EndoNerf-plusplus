@@ -73,9 +73,9 @@ Data/
 └── Sequence_Name/
     ├── images/
     ├── masks/
-    ├── gt_masks/          # Optional
-    ├── depth/             # Optional
-    ├── images_right/      # Optional (stereo datasets)
+    ├── gt_masks/         
+    ├── depth/             
+    ├── images_right/      
     └── poses_bounds.npy
 ```
 
@@ -85,11 +85,6 @@ Data/
 - `masks/` : Binary foreground masks
 - `poses_bounds.npy` : Camera poses and scene bounds
 
-### Optional Files
-
-- `depth/` : Depth maps for depth-supervised training
-- `gt_masks/` : Ground-truth segmentation masks
-- `images_right/` : Right-view images for stereo datasets
 
 Example:
 
@@ -106,7 +101,7 @@ Data/
 The dataset path should then be specified in the configuration file:
 
 ```text
-datadir = /path/to/Data/P26data
+datadir = /path/to/Data/Cutting_Tissues_Twice
 ```
 
 

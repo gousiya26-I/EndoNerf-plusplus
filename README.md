@@ -90,7 +90,7 @@ Example:
 
 ```text
 Data/
-└── P26data/
+└── Cutting_Tissues_Twice/
     ├── images/
     ├── masks/
     ├── depth/

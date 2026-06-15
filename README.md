@@ -64,6 +64,53 @@ python run_endonerf.py --config Configs/example.txt
 ```
 
 ---
+## 📂 Dataset Structure
+
+All training scripts expect the dataset to follow the EndoNeRF directory structure:
+
+```text
+Data/
+└── Sequence_Name/
+    ├── images/
+    ├── masks/
+    ├── gt_masks/          # Optional
+    ├── depth/             # Optional
+    ├── images_right/      # Optional (stereo datasets)
+    └── poses_bounds.npy
+```
+
+### Required Files
+
+- `images/` : RGB training images
+- `masks/` : Binary foreground masks
+- `poses_bounds.npy` : Camera poses and scene bounds
+
+### Optional Files
+
+- `depth/` : Depth maps for depth-supervised training
+- `gt_masks/` : Ground-truth segmentation masks
+- `images_right/` : Right-view images for stereo datasets
+
+Example:
+
+```text
+Data/
+└── P26data/
+    ├── images/
+    ├── masks/
+    ├── depth/
+    ├── gt_masks/
+    └── poses_bounds.npy
+```
+
+The dataset path should then be specified in the configuration file:
+
+```text
+datadir = /path/to/Data/P26data
+```
+
+
+
 
 ### 2. Multi-Resolution Encoding
 

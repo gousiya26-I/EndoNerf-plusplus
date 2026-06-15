@@ -134,7 +134,7 @@ For uncertainty-aware reconstruction, use:
 Example:
 
 ```bash
-python Uncertainty_Estimation_run_endonerf.py --config Configs/uncertainty_example.txt
+python Uncertainty_Estimation_run_endonerf.py --config configs/example.txt(Uncertainty_Estimation)
 ```
 
 ---
@@ -150,7 +150,7 @@ For adaptive sampling, use:
 Example:
 
 ```bash
-python Adaptive_Sampling_run_endonerf.py --config Configs/adaptive_sampling_example.txt
+python Adaptive_Sampling_run_endonerf.py --config configs/example.txt(Adaptive_Sampling)
 ```
 
 ---

@@ -118,7 +118,7 @@ For the multi-resolution hash encoding version, use:
 Example:
 
 ```bash
-python Multiresolution_Encoding_run_endonerf.py --config Configs/multiresolution_example.txt
+python Multiresolution_Encoding_run_endonerf.py --config configs/example.txt(Multiresolution_Encoding)
 ```
 
 ---
